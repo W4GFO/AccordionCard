@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AccordionCard/static/css/main.6cccaf67.css",
+    "main.js": "/AccordionCard/static/js/main.082e72ed.js",
+    "static/js/787.6a1e897f.chunk.js": "/AccordionCard/static/js/787.6a1e897f.chunk.js",
+    "index.html": "/AccordionCard/index.html",
+    "main.6cccaf67.css.map": "/AccordionCard/static/css/main.6cccaf67.css.map",
+    "main.082e72ed.js.map": "/AccordionCard/static/js/main.082e72ed.js.map",
+    "787.6a1e897f.chunk.js.map": "/AccordionCard/static/js/787.6a1e897f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cccaf67.css",
+    "static/js/main.082e72ed.js"
+  ]
+}
