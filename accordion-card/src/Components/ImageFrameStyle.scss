@@ -12,6 +12,19 @@
 	border-radius: $GlobalBorderRadius;
 }
 
+//Because the outer frame is absolute, we need a relatively positioned
+//frame so we can move the second box image around. NOTE: The second
+//box image is only needed for desktop, but we still have our elements
+//contained within the frame for all form-factors.
+.images-container {
+	position: relative;
+}
+
+.desktop-box-frame {
+	display: none;
+	position: absolute;
+}
+
 @media screen and (min-width:$MobileLargerMobileBreakPoint) {
 	.image-outer-frame {
 		width: 84%;
@@ -46,4 +59,14 @@
 		width: 42%;
 		left: -68px;
 	}
+
+	.desktop-box-frame {
+		display: unset;
+
+		top:50%;
+		left: -20px;
+		transform: translateY(-30%);
+	}
+ 
+
 }
