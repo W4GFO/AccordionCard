@@ -1,0 +1,45 @@
+@import '../AllStyles/GlobalStyles.scss';
+
+.primary-frame {
+	width: 90%;
+	height: 90%;
+	position: relative;
+	border-radius: 10px;
+}
+
+@media only screen and (min-width:$MobileLargerMobileBreakPoint) {
+	.primary-frame {
+		width: 92%;
+		height: 95%;
+	}
+}
+
+@media only screen and (min-width:$MobileVeryLargeMobileBreakPoint) {
+	.primary-frame {
+		width: 88%;
+		height: 95%;
+	}
+}
+
+@media only screen and (min-width:$MobileSuperLargeMobileBreakPoint) {
+	.primary-frame {
+		width: 86%;
+		height: 98%;
+	}
+}
+
+@media only screen and (min-width:$DeskTopFirstBreakPoint) {
+	.primary-frame {
+		width: 86%;
+		height: 64%;
+		background-color: orange;
+	}
+}
+
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {
+	.primary-frame {
+		max-width: 1000px;
+		height: 78%;
+		background-color: green;
+	}
+}

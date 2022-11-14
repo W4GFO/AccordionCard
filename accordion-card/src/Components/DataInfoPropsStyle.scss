@@ -1,0 +1,94 @@
+@import '../AllStyles/GlobalStyles.scss';
+
+.DataInfoParentContainer {
+	width: 100%;
+	display: grid;
+
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+
+	grid-template-areas: 
+		"title-info title-info"
+		"statement statement";
+
+	margin: 0px;
+	border: 1px solid purple;
+}
+
+.data-title-components {
+	display: flex;
+
+	width: 100%;
+	grid-area: title-info;
+
+	background-color: cornflowerblue;
+}
+
+.data-title-component-item-title {
+	flex:4;
+}
+
+
+.data-title-component-item-image {
+	flex:1;
+	align-self: flex-start;
+}
+
+.data-title-components button {
+	border: 1px solid chartreuse;
+	background-color: orange;
+
+	width: fit-content;
+	height: fit-content;
+
+	color: red;
+	font-size: large;
+	font-weight: bolder;
+
+	margin-left: 38px;
+
+	border: none;
+	background-color: transparent;
+
+	text-align:center;
+}
+
+.data-title-components p {
+	grid-area: statement;
+}
+
+.data-title-strong {
+	font-weight: 900;
+}
+
+.data-info-hidden {
+	//display: none;
+	color: orange;
+	height: 0px;
+	//border: 1px solid white;
+	// grid-template-rows: 1fr;
+	// grid-template-areas: 
+	// "title expandbtn";
+}
+
+.button-up-rotation {
+	transition: transform 300ms;
+	transform: rotate(180deg);
+}
+
+.button-down-rotation {
+	transition: transform 300ms;
+	transform: rotate(360deg);//Because I want it to rotate to the right
+}
+
+@media only screen and (min-width:$DeskTopFirstBreakPoint) {
+	.data-title-components button {
+		margin-left: 44px;
+	}
+}
+
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {
+	.data-title-components button {
+		margin-left: 58px;
+	}
+}

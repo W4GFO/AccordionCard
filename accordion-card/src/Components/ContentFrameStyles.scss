@@ -1,0 +1,79 @@
+@import '../AllStyles/GlobalStyles.scss';
+
+.content-outer-frame {
+	width: 100%;
+	height: 83%;
+
+	position: absolute;
+	top:17%;
+
+	background-color: white;
+	border-radius: $GlobalBorderRadius;
+}
+
+.content-frame {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	margin-top: 32%;
+
+	border-radius: $GlobalBorderRadius;
+	background-color: #C2C2C2;
+}
+
+.content-frame-flex-item {
+	flex: 1;
+}
+
+.content-frame h1 {
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+
+@media screen and (min-width:$MobileLargerMobileBreakPoint) {
+	.content-outer-frame {
+		height: 80%;
+		top:20%
+	}
+}
+
+@media only screen and (min-width:$MobileVeryLargeMobileBreakPoint) {
+
+}
+
+@media only screen and (min-width:$MobileSuperLargeMobileBreakPoint) {
+	.content-outer-frame {
+		background-color: orange;
+	}
+}
+
+@media only screen and (min-width:$DeskTopFirstBreakPoint) {
+	.content-outer-frame {
+		width: 100%;
+		height: 100%;
+
+		top: 0;
+	
+		// overflow: hidden;
+		// overflow-y: scroll;
+		background-color: chartreuse;
+	}
+
+	.content-frame {
+		width: 50%;
+		height: 90%;
+		margin-top: 0px;
+
+		position: relative;
+
+		top:50%;
+		transform: translateY(-50%);
+
+		background-color: #C2C2C2;
+		left: 48%;//Give a little space on the right side
+	}
+}
+
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {}

@@ -1,9 +1,10 @@
 import './App.scss'
+import {PrimaryFrame} from './Components/PrimaryFrame'
 
 function App() {
   return (
     <>
-      <h1>Accordion Project</h1>
+      <PrimaryFrame />
     </>
   );
 }
