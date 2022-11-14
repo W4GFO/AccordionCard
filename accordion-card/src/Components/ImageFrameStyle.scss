@@ -1,0 +1,70 @@
+@import '../AllStyles/GlobalStyles.scss';
+
+.image-outer-frame {
+	width: 80%;
+
+	z-index: 2;
+	position: absolute;
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	border-radius: $GlobalBorderRadius;
+}
+
+//Because the outer frame is absolute, we need a relatively positioned
+//frame so we can move the second box image around. NOTE: The second
+//box image is only needed for desktop, but we still have our elements
+//contained within the frame for all form-factors.
+.images-container {
+	position: relative;
+}
+
+.desktop-box-frame {
+	display: none;
+	position: absolute;
+}
+
+@media screen and (min-width:$MobileLargerMobileBreakPoint) {
+	.image-outer-frame {
+		width: 84%;
+	}
+}
+
+@media only screen and (min-width:$MobileVeryLargeMobileBreakPoint) {
+	.image-outer-frame {
+		width: 72%;
+	}
+}
+
+@media only screen and (min-width:$MobileSuperLargeMobileBreakPoint) {
+	.image-outer-frame {
+		width: 58%;
+	}
+}
+
+//Begining the desktop layout of our design
+@media only screen and (min-width:$DeskTopFirstBreakPoint) {
+	.image-outer-frame {
+		width: 48%;
+
+		top: 50%;
+		left: -40px;
+		transform: translateY(-50%);
+	}
+}
+
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {
+	.image-outer-frame {
+		width: 42%;
+		left: -68px;
+	}
+
+	.desktop-box-frame {
+		display: unset;
+
+		top:50%;
+		left: -20px;
+		transform: translateY(-30%);
+	}
+}
