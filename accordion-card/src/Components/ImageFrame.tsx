@@ -15,7 +15,6 @@ export const ImageFrame = (props: ImageFrameProps) => {
 				</picture>
 
 				<img className='desktop-box-frame' src={desktop_box} alt='box on floor'/>
-
 			</div>
 		</section>
 	)

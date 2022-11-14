@@ -48,9 +48,6 @@
 }
 
 @media only screen and (min-width:$MobileSuperLargeMobileBreakPoint) {
-	// .content-outer-frame {
-	// 	background-color: orange;
-	// }
 }
 
 @media only screen and (min-width:$DeskTopFirstBreakPoint) {
@@ -59,10 +56,6 @@
 		height: 100%;
 
 		top: 0;
-	
-		// overflow: hidden;
-		// overflow-y: scroll;
-		//background-color: chartreuse;
 	}
 
 	.content-frame {
