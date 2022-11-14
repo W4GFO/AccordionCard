@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {FaChevronDown} from 'react-icons/fa'
 import {DataInfoType, DataDisplayData} from '../defs'
 
-import './DataInfoPropsStyle.scss'
+import './DataInfoElementStyle.scss'
 
 type DataInfoProps = {
 	className:string
