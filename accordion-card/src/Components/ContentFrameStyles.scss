@@ -7,6 +7,9 @@
 	position: absolute;
 	top:17%;
 
+	overflow: hidden;
+	overflow-y: scroll;
+
 	background-color: white;
 	border-radius: $GlobalBorderRadius;
 }
@@ -19,7 +22,6 @@
 	margin-top: 32%;
 
 	border-radius: $GlobalBorderRadius;
-	background-color: #C2C2C2;
 }
 
 .content-frame-flex-item {
@@ -30,6 +32,8 @@
 	text-align: center;
 	margin-top: 8px;
 	margin-bottom: 24px;
+	font-size: x-large;
+	color: $TextVeryDarkGrayishBlue;
 }
 
 @media screen and (min-width:$MobileLargerMobileBreakPoint) {
@@ -44,9 +48,9 @@
 }
 
 @media only screen and (min-width:$MobileSuperLargeMobileBreakPoint) {
-	.content-outer-frame {
-		background-color: orange;
-	}
+	// .content-outer-frame {
+	// 	background-color: orange;
+	// }
 }
 
 @media only screen and (min-width:$DeskTopFirstBreakPoint) {
@@ -58,7 +62,7 @@
 	
 		// overflow: hidden;
 		// overflow-y: scroll;
-		background-color: chartreuse;
+		//background-color: chartreuse;
 	}
 
 	.content-frame {
@@ -71,7 +75,6 @@
 		top:50%;
 		transform: translateY(-50%);
 
-		background-color: #C2C2C2;
 		left: 48%;//Give a little space on the right side
 	}
 }

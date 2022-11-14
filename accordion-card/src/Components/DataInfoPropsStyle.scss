@@ -2,32 +2,20 @@
 
 .DataInfoParentContainer {
 	width: 100%;
-	display: grid;
-
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr;
-
-	grid-template-areas: 
-		"title-info title-info"
-		"statement statement";
 
 	margin: 0px;
-	border: 1px solid purple;
 }
 
 .data-title-components {
 	display: flex;
 
-	width: 100%;
-	grid-area: title-info;
-
-	background-color: cornflowerblue;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 
 .data-title-component-item-title {
 	flex:4;
 }
-
 
 .data-title-component-item-image {
 	flex:1;
@@ -35,42 +23,65 @@
 }
 
 .data-title-components button {
-	border: 1px solid chartreuse;
-	background-color: orange;
-
 	width: fit-content;
 	height: fit-content;
 
-	color: red;
 	font-size: large;
+	text-align:center;
 	font-weight: bolder;
+	color: lightcoral;
 
 	margin-left: 38px;
 
 	border: none;
 	background-color: transparent;
-
-	text-align:center;
 }
 
-.data-title-components p {
-	grid-area: statement;
+.DataInfoParentContainer p {
+	margin-left: 8px;
+	margin-right: 8px;
+
+	font-size: 1.3em;
+	color: $TextDarkGrayishBlue;
+}
+
+.bottom-border {
+	height: 1px;
+	margin: 0px 8px 12px 8px;
+	background-color: $DividerLightGrayishBlue;
+}
+
+.data-title {
+	font-size: 1.3em;
+	color: $TextDarkGrayishBlue;
 }
 
 .data-title-strong {
 	font-weight: 900;
+	color: $TextVeryDarkGrayishBlue;
+	transition: font-weight 1000ms ease-out;
+}
+
+//Transitions the statement between diaplaying states
+.data-info-visible {
+	display: block;
+
+	margin-top: 8px;
+	margin-bottom: 8px;
+	transform: scaleY(1);
+	transition: transform 500ms, margin 500ms;
 }
 
 .data-info-hidden {
-	//display: none;
-	color: orange;
-	height: 0px;
-	//border: 1px solid white;
-	// grid-template-rows: 1fr;
-	// grid-template-areas: 
-	// "title expandbtn";
+	//height: 0px;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	transform: scaleY(0);
+	transition: transform 500ms, margin 500ms;//, height 500ms;
 }
 
+//Button flip transitions/animations
 .button-up-rotation {
 	transition: transform 300ms;
 	transform: rotate(180deg);
@@ -85,10 +96,26 @@
 	.data-title-components button {
 		margin-left: 44px;
 	}
+
+	.data-title {
+		font-size: 1.4em;
+	}
+
+	.DataInfoParentContainer p {
+		font-size: 1.3em;
+	}
 }
 
 @media only screen and (min-width:$DeskTopLargeBreakPoint) {
 	.data-title-components button {
 		margin-left: 58px;
+	}
+
+	.data-title {
+		font-size: 1.6em;
+	}
+
+	.DataInfoParentContainer p {
+		font-size: 1.4em;
 	}
 }

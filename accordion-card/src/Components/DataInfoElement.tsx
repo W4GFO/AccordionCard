@@ -31,7 +31,8 @@ export const DataInfoElement = ({className, dataIndex}: DataInfoProps) => {
 				</div>
 			</div>
 
-			<p className={(isExpanded === false) ? 'data-info-hidden' : ''}>{dataElementInfo.statement}</p>
+			<p className={(isExpanded === false) ? 'data-info-hidden' : 'data-info-visible'}>{dataElementInfo.statement}</p>
+			<footer className='bottom-border'></footer>
 		</section>
 	)
 }

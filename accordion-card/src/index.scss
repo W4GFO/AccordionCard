@@ -7,9 +7,12 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Kumbh Sans', 'Roboto', 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  font-size: 12px;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,11 +28,11 @@ div#root {
   overflow: hidden;
   overflow-y: scroll;
 
-  background-color: purple;
+  background-image: linear-gradient($SoftViolet,$SoftBlue)
 }
 
 @media only screen and (min-width:$DeskTopFirstBreakPoint) {
   div#root {
-    background-color: transparent;
+    background-color: chartreuse;
   }
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Kumbh+Sans');
 
 $MobileLargerMobileBreakPoint:451px;
 $MobileVeryLargeMobileBreakPoint:550px;
@@ -7,3 +8,17 @@ $DeskTopFirstBreakPoint:860px;
 $DeskTopLargeBreakPoint:1080px;
 
 $GlobalBorderRadius:12px;
+
+//Background Gradiant
+$SoftViolet: hsl(273, 75%, 66%);
+$SoftBlue: hsl(240, 73%, 65%);
+
+//Text Colors
+$TextDarkGrayishBlue: hsl(240, 6%, 50%);
+$TextVeryDarkGrayishBlue: hsl(237, 12%, 33%);
+
+//Dividers color
+$DividerLightGrayishBlue: hsl(240, 5%, 91%);
+
+$FontWeightLight:400;
+$FontWeightHeavy:700;
